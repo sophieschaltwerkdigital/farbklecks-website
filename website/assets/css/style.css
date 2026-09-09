@@ -571,6 +571,8 @@ p:last-child { margin-bottom: 0; }
 .hours__time { color: var(--ink-soft); white-space: nowrap; }
 .hours__row.is-today { background: var(--yellow-tint); border-radius: var(--r-sm); padding-inline: .7rem; }
 .hours__row.is-today .hours__time { color: var(--ink); font-weight: 700; }
+.hours__time--wrap { white-space: normal; text-align: right; }
+.hours__heading { font-size: 1rem; }
 
 .status-pill {
   display: inline-flex; align-items: center; gap: .5rem;
