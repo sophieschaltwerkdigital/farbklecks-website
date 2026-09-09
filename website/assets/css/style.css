@@ -447,7 +447,7 @@ p:last-child { margin-bottom: 0; }
 /* Kleiner Seiten-Hero für Unterseiten */
 .pagehero {
   position: relative; overflow: hidden;
-  padding-block: 1rem clamp(2.4rem, 1.5rem + 3.5vw, 4.5rem);
+  padding-block: clamp(2.4rem, 1.5rem + 3.5vw, 4.5rem);
   background: var(--surface);
 }
 .pagehero__inner { position: relative; z-index: 1; }
