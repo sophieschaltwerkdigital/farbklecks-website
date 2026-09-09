@@ -484,6 +484,12 @@ p:last-child { margin-bottom: 0; }
 .card--lilac .card__icon  { background: var(--yellow-tint); }
 .card--blue .card__icon   { background: var(--accent-tint); }
 
+.card--highlight { border-color: transparent; }
+.card--highlight .card__icon { background: #fff9f0; }
+.card--highlight.card--teal  { background: var(--accent-2-tint); }
+.card--highlight.card--yellow{ background: var(--yellow-tint); }
+.card--highlight.card--coral { background: rgba(242, 124, 126, .16); }
+
 .card--link { text-decoration: none; color: inherit; display: block; }
 .card__more {
   display: inline-flex; align-items: center; gap: .4rem;
