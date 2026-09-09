@@ -451,10 +451,6 @@ p:last-child { margin-bottom: 0; }
   background: var(--surface);
 }
 .pagehero__inner { position: relative; z-index: 1; }
-.breadcrumb { font-size: .87rem; color: var(--ink-soft); margin-bottom: 1.8rem; }
-.breadcrumb a { color: var(--ink-soft); }
-.breadcrumb span { margin-inline: .4rem; }
-
 /* ---------- 08 Sektionen & Karten ----------------------- */
 .card {
   position: relative;
