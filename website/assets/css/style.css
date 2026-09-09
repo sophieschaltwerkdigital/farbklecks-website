@@ -574,6 +574,35 @@ p:last-child { margin-bottom: 0; }
 .hours__time--wrap { white-space: normal; text-align: right; line-height: 1.7; }
 .hours__heading { font-size: 1rem; }
 
+.weekplan { border-collapse: separate; border-spacing: .5rem; width: 100%; min-width: 660px; }
+.weekplan thead th {
+  font-family: var(--font-body); font-weight: 700; font-size: .92rem;
+  text-align: center; padding: .3rem .5rem .6rem;
+}
+.weekplan tbody th {
+  font-family: var(--font-body); font-weight: 700; font-size: .78rem;
+  text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint);
+  text-align: left; white-space: nowrap; padding: .5rem .6rem; vertical-align: top;
+}
+.weekplan__cell {
+  background: var(--surface); border-radius: var(--r-md);
+  padding: .8rem .9rem; vertical-align: top; min-width: 128px;
+  font-size: .92rem; line-height: 1.35;
+}
+.weekplan__cell--empty { background: var(--surface-2); }
+.weekplan__cell--bewegung { background: var(--accent-2-tint); }
+.weekplan__cell--bewegung .weekplan__tag { color: var(--accent-2-tint-ink); }
+.weekplan__cell--musik { background: rgba(242, 124, 126, .16); }
+.weekplan__cell--musik .weekplan__tag { color: var(--cta-ink); }
+.weekplan__cell--kueche { background: var(--yellow-tint); }
+.weekplan__cell--kueche .weekplan__tag { color: var(--yellow-tint-ink); }
+.weekplan__tag {
+  display: flex; align-items: center; gap: .35rem;
+  font-weight: 700; font-size: .68rem; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--ink-faint); margin-bottom: .35rem;
+}
+.weekplan__tag::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: .55; flex: none; }
+
 .status-pill {
   display: inline-flex; align-items: center; gap: .5rem;
   border-radius: var(--r-pill); padding: .35rem .9rem;

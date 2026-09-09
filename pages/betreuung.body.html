@@ -254,16 +254,38 @@
       <div class="section-head">
         <span class="eyebrow">Fester Rhythmus</span>
         <h2>Wochenprogramm</h2>
+        <p class="lead">Jeder Tag hat seinen festen Platz – so wissen die Kinder, was sie erwartet.</p>
       </div>
       <div class="card">
         <div style="overflow-x:auto">
-          <table class="table">
+          <table class="weekplan">
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Tageszeit</span></th>
+                <th scope="col">Montag</th>
+                <th scope="col">Dienstag</th>
+                <th scope="col">Mittwoch</th>
+                <th scope="col">Donnerstag</th>
+                <th scope="col">Freitag</th>
+              </tr>
+            </thead>
             <tbody>
-              <tr><th scope="row" style="white-space:nowrap">Montag</th><td>am Nachmittag: Flöte mit den Pfiffiküssen</td></tr>
-              <tr><th scope="row" style="white-space:nowrap">Dienstag</th><td>am Vormittag: Turnen mit den Großen<br>am Nachmittag: Märchenstunde</td></tr>
-              <tr><th scope="row" style="white-space:nowrap">Mittwoch</th><td>am Vormittag: Turnen mit den Kleinen<br>am Nachmittag: Pfiffikusaktionen, z.&nbsp;B. Experimentieren</td></tr>
-              <tr><th scope="row" style="white-space:nowrap">Donnerstag</th><td>am Vormittag: Sing- &amp; Spielkreis<br>am Nachmittag: Kaffeeklatsch oder Musikus-Tag</td></tr>
-              <tr><th scope="row" style="white-space:nowrap">Freitag</th><td>am Vormittag: Kochtag für alle Farbkleckse</td></tr>
+              <tr>
+                <th scope="row">Vormittag</th>
+                <td class="weekplan__cell weekplan__cell--empty"></td>
+                <td class="weekplan__cell weekplan__cell--bewegung"><span class="weekplan__tag">Bewegung</span>Turnen mit den Großen</td>
+                <td class="weekplan__cell weekplan__cell--bewegung"><span class="weekplan__tag">Bewegung</span>Turnen mit den Kleinen</td>
+                <td class="weekplan__cell weekplan__cell--musik"><span class="weekplan__tag">Musik</span>Sing- &amp; Spielkreis</td>
+                <td class="weekplan__cell weekplan__cell--kueche"><span class="weekplan__tag">Küche</span>Kochtag für alle Farbkleckse</td>
+              </tr>
+              <tr>
+                <th scope="row">Nachmittag</th>
+                <td class="weekplan__cell weekplan__cell--musik"><span class="weekplan__tag">Musik</span>Flöte mit den Pfiffiküssen</td>
+                <td class="weekplan__cell"><span class="weekplan__tag">Vorlesen</span>Märchenstunde</td>
+                <td class="weekplan__cell"><span class="weekplan__tag">Entdecken</span>Pfiffikusaktionen, z.&nbsp;B. Experimentieren</td>
+                <td class="weekplan__cell"><span class="weekplan__tag">Gemeinsam</span>Kaffeeklatsch oder Musikus-Tag</td>
+                <td class="weekplan__cell weekplan__cell--empty"></td>
+              </tr>
             </tbody>
           </table>
         </div>
