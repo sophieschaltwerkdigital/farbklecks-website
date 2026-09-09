@@ -139,7 +139,10 @@
     var minutes = now.getHours() * 60 + now.getMinutes();
 
     rows.forEach(function (row) {
-      if (parseInt(row.getAttribute("data-weekday"), 10) === day) {
+      var days = row.getAttribute("data-weekday").split(",").map(function (d) {
+        return parseInt(d, 10);
+      });
+      if (days.indexOf(day) !== -1) {
         row.classList.add("is-today");
       }
     });
