@@ -563,7 +563,7 @@ p:last-child { margin-bottom: 0; }
 /* ---------- 09 Spezial-Komponenten ---------------------- */
 .hours { display: grid; gap: .1rem; }
 .hours__row {
-  display: flex; justify-content: space-between; gap: 1rem;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;
   padding: .7rem .2rem; border-bottom: 1px dashed var(--line);
 }
 .hours__row:last-child { border-bottom: 0; }
@@ -571,7 +571,7 @@ p:last-child { margin-bottom: 0; }
 .hours__time { color: var(--ink-soft); white-space: nowrap; }
 .hours__row.is-today { background: var(--yellow-tint); border-radius: var(--r-sm); padding-inline: .7rem; }
 .hours__row.is-today .hours__time { color: var(--ink); font-weight: 700; }
-.hours__time--wrap { white-space: normal; text-align: right; }
+.hours__time--wrap { white-space: normal; text-align: right; line-height: 1.7; }
 .hours__heading { font-size: 1rem; }
 
 .status-pill {
