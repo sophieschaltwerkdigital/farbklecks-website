@@ -63,12 +63,12 @@ farbklecks-website/
     │                         "Über uns" mit Dropdown, Unterpunkte sind Anchor-Links auf
     │                         Sektionen dieser einen Seite (#einrichtung, #raeume, #team,
     │                         #traeger, #paedagogik), keine eigenen Unterseiten
-    ├── krippe.html           Krippengruppe, Anmeldung (2. Sektion), Öffnungs-/
-    │                         Buchungszeiten, Gebühren (U3), Essen & Alltag,
-    │                         Konzept der Kinderkrippe, Wochenprogramm, Elternarbeit
-    ├── kindergarten.html     Kindergartengruppe, Anmeldung (2. Sektion), Öffnungs-/
-    │                         Buchungszeiten, Gebühren (Regelkinder), Essen & Alltag,
-    │                         Wochenprogramm, Elternarbeit
+    ├── krippe.html           Tab-Sektion "Betreuung" (Eingewöhnung, Checkliste zum
+    │                         Start, Tagesablauf, Mahlzeiten, Wochenprogramm, Zeiten,
+    │                         Kosten) direkt nach dem Hero, danach Anmeldung (Text +
+    │                         Button, FAQs statt Foto), Elternarbeit
+    ├── kindergarten.html     Gleicher Aufbau wie krippe.html: Tab-Sektion "Betreuung"
+    │                         direkt nach dem Hero, danach Anmeldung, Elternarbeit
     ├── aktuelles.html        Termine und Berichte
     ├── kontakt.html          Kontaktdaten, Formular, Anfahrt
     ├── impressum.html        Vorlage – teils noch zu vervollständigen
@@ -121,7 +121,7 @@ Die Seite kommt bewusst ohne Dritt-Dienste aus. Das darf nicht aufgeweicht werde
 | | |
 |---|---|
 | Öffnungszeiten Kindergarten | Mo–Do 7:30–15:45 Uhr, Fr 7:30–13:30 Uhr |
-| Öffnungszeiten Krippe | weicht ab – siehe `krippe.html`, Abschnitt „Öffnungszeiten" |
+| Öffnungszeiten Krippe | weicht ab – siehe `krippe.html`, Tab „Zeiten" |
 | Kindergarten | eine Gruppe, 25 Plätze, ab 3 Jahren |
 | Krippe | ab 12 Monaten, seit September 2022, **mittlerweile im neuen Anbau
   direkt am Standort Daxberg** (nicht mehr Niedersteinbach – dort war die
@@ -149,7 +149,7 @@ das JSON-LD in `build.py` konsistent halten.
 3. **Kontaktformular** an ein Versandskript anbinden (`action`-Attribut in
    `kontakt.html` bzw. `pages/kontakt.body.html`).
 4. **Alte URLs** erfassen und ggf. 301-Weiterleitungen in `.htaccess` ergänzen.
-5. `krippe.html`, Abschnitt „Konzept der Kinderkrippe" → Räumlichkeiten:
+5. `krippe.html`, Tab „Eingewöhnung" → Abschnitt „Unsere Räumlichkeiten":
    Beschreibung ist noch die alte (Niedersteinbach), muss an den neuen
    Anbau angepasst werden (im Code mit `todo-note` markiert).
 

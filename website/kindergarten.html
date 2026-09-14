@@ -95,24 +95,257 @@
     </div>
   </section>
 
-  <!-- ============ VORSTELLUNG ============ -->
-  <section class="section">
-    <div class="wrap split">
-      <div class="split__text">
-        <span class="eyebrow">Unsere Kindergartengruppe</span>
-        <h2>Eine Gruppe, viel Freiraum zum Wachsen</h2>
-        <p>
-          Eine Gruppe mit 25 Plätzen in der Glasbergstraße 14 in Daxberg –
-          mit Freiarbeit, Morgenkreis, Garten und Vorschulangeboten.
+  <!-- ============ BETREUUNG ============ -->
+  <section class="section" id="betreuung">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Alles zur Betreuung</span>
+        <h2>Ihr Kind im Kindergarten</h2>
+        <p class="lead">
+          Von der Eingewöhnung bis zu den Kosten – hier finden Sie alle
+          Informationen rund um den Kindergartenalltag auf einen Blick.
         </p>
-        <ul class="ticks" style="margin-top:1.4rem">
-          <li>Montessori-Freiarbeit</li>
-          <li>Projekte und Ausflüge</li>
-          <li>Vorschule im letzten Kindergartenjahr</li>
-        </ul>
       </div>
-      <div class="split__media reveal">
-        <div class="media-frame media-frame--placeholder">Foto: Gruppenraum</div>
+
+      <div data-tabs>
+        <div class="tabs__list" role="tablist" aria-label="Betreuung im Kindergarten">
+          <button class="tabs__btn" type="button" role="tab" id="tab-eingewoehnung" aria-controls="panel-eingewoehnung" aria-selected="true">Eingewöhnung</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-checkliste" aria-controls="panel-checkliste" aria-selected="false">Checkliste zum Start</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-tagesablauf" aria-controls="panel-tagesablauf" aria-selected="false">Tagesablauf</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-mahlzeiten" aria-controls="panel-mahlzeiten" aria-selected="false">Mahlzeiten</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-wochenprogramm" aria-controls="panel-wochenprogramm" aria-selected="false">Wochenprogramm</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-zeiten" aria-controls="panel-zeiten" aria-selected="false">Zeiten</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-kosten" aria-controls="panel-kosten" aria-selected="false">Kosten</button>
+        </div>
+
+        <!-- ---- Eingewöhnung ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-eingewoehnung" aria-labelledby="tab-eingewoehnung">
+          <div class="card">
+            <p>
+              Der Übergang von zu Hause in den Kindergarten ist ein großer
+              Schritt. Deshalb nehmen wir uns Zeit: Die Eingewöhnung erfolgt
+              schrittweise und begleitet durch eine feste Bezugsperson.
+            </p>
+            <ul class="ticks" style="margin-top:1.2rem">
+              <li><strong>Kennenlernen:</strong> erste Besuche gemeinsam mit Mama oder Papa</li>
+              <li><strong>Erste Trennung:</strong> kurze Zeitspannen, die langsam wachsen</li>
+              <li><strong>Stabilisierung:</strong> das Kind lässt sich vom Team trösten</li>
+              <li><strong>Abschluss:</strong> das Kind fühlt sich sicher und gehört dazu</li>
+            </ul>
+            <p style="margin-top:1.2rem">
+              Wie lange die Eingewöhnung dauert, entscheidet letztlich das
+              Kind – wir nehmen uns die Zeit, die es dafür braucht.
+            </p>
+          </div>
+        </div>
+
+        <!-- ---- Checkliste zum Start ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-checkliste" aria-labelledby="tab-checkliste" hidden>
+          <div class="card">
+            <p>Damit der Start bei uns entspannt gelingt, hier alles auf einen Blick, was Ihr Kind braucht:</p>
+            <ul class="ticks" style="margin-top:1rem">
+              <li>Wechselkleidung, die auch mal schmutzig werden darf – wir arbeiten oft mit Farben, Klebstoff und Knete</li>
+              <li>Wetterfeste Kleidung: Wir sind bei jedem Wetter (außer Regen) draußen</li>
+              <li>Hausschuhe</li>
+              <li>Ein vertrautes Kuscheltier für die Ruhezeit am Nachmittag</li>
+              <li>Ein kleines, nahrhaftes Frühstück (siehe Abschnitt „Mahlzeiten“)</li>
+            </ul>
+            <p style="margin-top:1rem"><em>Bitte kennzeichnen Sie alle Sachen Ihres Kindes gut sichtbar mit Namen.</em></p>
+          </div>
+        </div>
+
+        <!-- ---- Tagesablauf ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-tagesablauf" aria-labelledby="tab-tagesablauf" hidden>
+          <ul class="timeline">
+            <li>
+              <span class="timeline__time">7:30</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Ankommen &amp; Bringzeit</span>
+                <span class="timeline__text">In Ruhe ankommen, begrüßt werden, erste Spiele beginnen.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">8:30</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Freiarbeit</span>
+                <span class="timeline__text">Die Kinder wählen ihre Arbeit selbst – allein oder gemeinsam,
+                  begleitet durch das Team.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">9:00</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Gleitendes Frühstück</span>
+                <span class="timeline__text">Jedes Kind frühstückt dann, wenn es Hunger hat.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">11:00</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Morgenkreis</span>
+                <span class="timeline__text">Lieder, Geschichten, Gespräche und Absprachen für den Tag.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">11:30</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Zeit im Garten</span>
+                <span class="timeline__text">Bewegung an der frischen Luft – bei fast jedem Wetter.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">12:30</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Mittagessen</span>
+                <span class="timeline__text">Gemeinsames Essen in ruhiger Atmosphäre.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">13:00</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Ruhezeit &amp; Angebote</span>
+                <span class="timeline__text">Ausruhen, Vorlesen und Projekte in Kleingruppen,
+                  z.&nbsp;B. für die Vorschulkinder.</span>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__time">15:45</span>
+              <div class="timeline__body">
+                <span class="timeline__title">Abholzeit</span>
+                <span class="timeline__text">Kurzer Austausch mit den Eltern zum Tag des Kindes.</span>
+              </div>
+            </li>
+          </ul>
+          <p class="todo-note" style="margin-top:2rem">
+            <strong>Hinweis für die Redaktion:</strong> Die Uhrzeiten sind ein Vorschlag auf
+            Basis eines typischen Montessori-Tagesablaufs. Bitte mit dem tatsächlichen
+            Ablauf im Haus abgleichen.
+          </p>
+        </div>
+
+        <!-- ---- Mahlzeiten ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-mahlzeiten" aria-labelledby="tab-mahlzeiten" hidden>
+          <div class="card">
+            <h4>Frühstück</h4>
+            <p>Es gibt jeden Morgen einen Obst- und Gemüseteller für alle.
+              Bitte geben Sie Ihrem Kind ein kleines, nahrhaftes Frühstück
+              mit – keine Getränke (wir bieten Milch, Wasser und Tee an) und
+              bitte keine Süßigkeiten.</p>
+            <h4 style="margin-top:1.2rem">Mittagessen</h4>
+            <p>Wir bieten Montag bis Donnerstag ein warmes Mittagessen an.
+              Dies wird vom Haus Miriam in Schöllkrippen geliefert. Die
+              Kosten hierfür belaufen sich auf 3,60&nbsp;€ pro Mittagessen.</p>
+            <h4 style="margin-top:1.2rem">Geburtstage feiern</h4>
+            <p>Wir feiern jeden Geburtstag mit einem kleinen Fest. Es wäre
+              günstig, wenn Sie einige Tage vor dem Geburtstag Ihres Kindes
+              mit uns über die Gestaltung sprechen könnten.</p>
+          </div>
+        </div>
+
+        <!-- ---- Wochenprogramm ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-wochenprogramm" aria-labelledby="tab-wochenprogramm" hidden>
+          <p class="lead" style="margin-bottom:1.2rem">
+            Jeder Tag hat seinen festen Platz – so wissen die Kinder, was sie
+            erwartet. Einmal wöchentlich gehen wir außerdem in altersgerechten
+            Gruppen zum Turnen in die Glasberghalle.
+          </p>
+          <div class="card">
+            <div style="overflow-x:auto">
+              <table class="weekplan">
+                <thead>
+                  <tr>
+                    <th scope="col"><span class="visually-hidden">Tageszeit</span></th>
+                    <th scope="col">Montag</th>
+                    <th scope="col">Dienstag</th>
+                    <th scope="col">Mittwoch</th>
+                    <th scope="col">Donnerstag</th>
+                    <th scope="col">Freitag</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Vormittag</th>
+                    <td class="weekplan__cell weekplan__cell--empty"></td>
+                    <td class="weekplan__cell weekplan__cell--bewegung"><span class="weekplan__tag">Bewegung</span>Turnen mit den Großen</td>
+                    <td class="weekplan__cell weekplan__cell--bewegung"><span class="weekplan__tag">Bewegung</span>Turnen mit den Kleinen</td>
+                    <td class="weekplan__cell weekplan__cell--musik"><span class="weekplan__tag">Musik</span>Sing- &amp; Spielkreis</td>
+                    <td class="weekplan__cell weekplan__cell--kueche"><span class="weekplan__tag">Küche</span>Kochtag für alle Farbkleckse</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nachmittag</th>
+                    <td class="weekplan__cell weekplan__cell--musik"><span class="weekplan__tag">Musik</span>Flöte mit den Pfiffiküssen</td>
+                    <td class="weekplan__cell"><span class="weekplan__tag">Vorlesen</span>Märchenstunde</td>
+                    <td class="weekplan__cell"><span class="weekplan__tag">Entdecken</span>Pfiffikusaktionen, z.&nbsp;B. Experimentieren</td>
+                    <td class="weekplan__cell"><span class="weekplan__tag">Gemeinsam</span>Kaffeeklatsch oder Musikus-Tag</td>
+                    <td class="weekplan__cell weekplan__cell--empty"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top:1rem"><em>In den Ferien findet kein Wochenprogramm statt.</em></p>
+          </div>
+        </div>
+
+        <!-- ---- Zeiten ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-zeiten" aria-labelledby="tab-zeiten" hidden>
+          <div class="card" style="max-width:640px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem">
+              <h4 class="hours__heading" style="margin:0">Öffnungszeiten</h4>
+              <span class="status-pill" data-opening-status></span>
+            </div>
+            <div class="hours">
+              <div class="hours__row"><span class="hours__day">Montag – Donnerstag</span><span class="hours__time">7:30 – 15:45 Uhr</span></div>
+              <div class="hours__row"><span class="hours__day">Freitag</span><span class="hours__time">7:30 – 13:30 Uhr</span></div>
+            </div>
+            <h4 class="hours__heading" style="margin-top:1.4rem">Bring- und Abholzeiten</h4>
+            <div class="hours">
+              <div class="hours__row"><span class="hours__day">Bringzeiten</span><span class="hours__time hours__time--wrap">7:30 – 9:00 Uhr<br>12:15 – 12:30 Uhr<br>13:15 – 13:30 Uhr</span></div>
+              <div class="hours__row"><span class="hours__day">Abholzeiten</span><span class="hours__time hours__time--wrap">12:15 – 12:30 Uhr<br>13:15 – 13:30 Uhr<br>15:30 – 15:45 Uhr</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- Kosten ---- -->
+        <div class="tabs__panel" role="tabpanel" id="panel-kosten" aria-labelledby="tab-kosten" hidden>
+          <div class="card">
+            <p>
+              Eine der Hauptaufgaben des St.-Johannes-Vereins ist es, den
+              Kindergartenbetrieb zu finanzieren. Hierfür erhält der Verein
+              Zuschüsse vom Freistaat Bayern, von der Gemeinde (insgesamt ca.
+              80&nbsp;% der Personalkosten) und im Bedarfsfall vom
+              Caritasverband. Rund 20&nbsp;% der Personalausgaben sowie die
+              gesamten Sachkosten sind durch die Elternbeiträge bzw. durch die
+              Einnahmen aus den Veranstaltungen zu decken.
+            </p>
+            <p>
+              Hinzu kommt eine monatliche Unkostenpauschale in Höhe von 5&nbsp;€.
+              Dieses Geld verwenden wir für das Kochen mit den Kindern am
+              Freitag, Geschenke und Feiern (z.&nbsp;B. Fasching, Oma-Opa-Tag
+              u.&nbsp;a.).
+            </p>
+            <p>
+              Ermäßigung für Geschwisterkinder: 25,00&nbsp;€/Monat. Ermäßigung
+              für Mitglieder: 2,00&nbsp;€/Monat. Das Spielgeld von 1,00&nbsp;€
+              ist im Beitrag enthalten.
+            </p>
+            <p style="margin-top:1.2rem">Elternbeiträge Regelkinder je nach durchschnittlicher täglicher Buchungszeit:</p>
+            <div style="overflow-x:auto;margin-top:.6rem">
+              <table class="table">
+                <thead>
+                  <tr><th>Buchungszeit</th><th>Monatsbeitrag</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>3–4 Stunden</td><td>145,00&nbsp;€</td></tr>
+                  <tr><td>4–5 Stunden</td><td>160,00&nbsp;€</td></tr>
+                  <tr><td>5–6 Stunden</td><td>175,00&nbsp;€</td></tr>
+                  <tr><td>6–7 Stunden</td><td>190,00&nbsp;€</td></tr>
+                  <tr><td>7–8 Stunden</td><td>205,00&nbsp;€</td></tr>
+                  <tr><td>8–9 Stunden</td><td>220,00&nbsp;€</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -140,293 +373,50 @@
           ein.
         </p>
         <div class="btn-row" style="margin-top:1.6rem">
-          <a class="btn btn--primary" href="https://moembris.zentrale-kitaplatzanmeldung.de/welcome" target="_blank" rel="noopener noreferrer">Zur zentralen Kitaplatzanmeldung</a>
+          <a class="btn btn--primary" href="https://moembris.zentrale-kitaplatzanmeldung.de/welcome" target="_blank" rel="noopener noreferrer">Zur Anmeldung</a>
         </div>
-      </div>
-      <div class="split__media reveal">
-        <div class="media-frame media-frame--placeholder">
-          Foto: Anmeldung &amp; erstes Kennenlernen
-        </div>
-      </div>
-    </div>
-
-    <div class="wrap split split--reverse" style="margin-top:var(--gap)">
-      <div class="split__text">
-        <span class="eyebrow">Unterlagen</span>
-        <h2>Weitere Unterlagen zum Herunterladen</h2>
-        <p>
-          Unsere pädagogische Konzeption und die Gebührenordnung stellen wir
-          Ihnen gerne zum Nachlesen zur Verfügung. Bei Fragen zu einzelnen
-          Punkten helfen wir Ihnen gerne persönlich weiter.
-        </p>
       </div>
       <div class="split__media">
-        <div class="downloads">
-          <a class="download reveal" href="assets/downloads/konzeption.pdf">
-            <span class="download__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12c-2.4-1.8-6-2.6-11-2.2v18c5-.4 8.6.4 11 2.2 2.4-1.8 6-2.6 11-2.2v-18c-5-.4-8.6.4-11 2.2z" fill="var(--accent-tint)"/><path d="M20 12v18"/></svg></span>
-            <span>
-              <span class="download__name">Pädagogische Konzeption</span>
-              <span class="download__meta">PDF · unser Konzept ausführlich</span>
-            </span>
-          </a>
-          <a class="download reveal d1" href="assets/downloads/gebuehrenordnung.pdf">
-            <span class="download__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="28" height="16" rx="3" fill="var(--accent-2-tint)"/><path d="M23 16.4c-1-.9-2.2-1.4-3.4-1.4-2.8 0-5 2.3-5 6s2.2 6 5 6c1.2 0 2.4-.5 3.4-1.4"/><path d="M12.5 19h6M12.5 22h6"/></svg></span>
-            <span>
-              <span class="download__name">Gebührenordnung</span>
-              <span class="download__meta">PDF · Beiträge und Buchungszeiten</span>
-            </span>
-          </a>
+        <div class="section-head">
+          <span class="eyebrow">Häufige Fragen</span>
+          <h2 style="font-size:1.3rem">Das fragen Eltern uns oft</h2>
         </div>
-        <p class="todo-note" style="margin-top:1.4rem">
-          <strong>Hinweis für die Redaktion:</strong> Die beiden PDF-Dateien der
-          bisherigen Website in <code>assets/downloads/</code> ablegen.
-        </p>
-      </div>
-    </div>
-
-    <div class="wrap wrap-narrow" style="margin-top:var(--gap)">
-      <div class="section-head text-center">
-        <span class="eyebrow">Häufige Fragen</span>
-        <h2>Das fragen Eltern uns oft</h2>
-      </div>
-      <div class="faq">
-        <details>
-          <summary>Ab wann kann ich mein Kind anmelden?</summary>
-          <div>Eine Anmeldung über die zentrale Kitaplatzanmeldung ist ab
-            Geburt des Kindes möglich. Ausschlaggebend für die Aufnahme ist
-            vor allem das Datum der Anmeldung – je früher, desto besser.</div>
-        </details>
-        <details>
-          <summary>Ab welchem Alter wird mein Kind betreut?</summary>
-          <div>In der Kinderkrippe betreuen wir Kinder ab zwölf Monaten,
-            im Kindergarten ab drei Jahren bis zum Schuleintritt.</div>
-        </details>
-        <details>
-          <summary>Können wir mehrere Kindergärten angeben?</summary>
-          <div>Ja. In der zentralen Kitaplatzanmeldung können Sie Ihren
-            Wunschkindergarten priorisieren, falls Sie sich bei mehreren
-            Einrichtungen anmelden möchten.</div>
-        </details>
-        <details>
-          <summary>Müssen wir katholisch sein?</summary>
-          <div>Nein. Wir sind eine katholische Einrichtung, aber alle Familien sind
-            bei uns herzlich willkommen – unabhängig von Konfession und Herkunft.</div>
-        </details>
-        <details>
-          <summary>Wie lange dauert die Eingewöhnung?</summary>
-          <div>Das entscheidet Ihr Kind. Die Eingewöhnung orientiert sich am
-            „Berliner Modell" und ist in fünf Phasen aufgeteilt. Mehr dazu auf
-            der Seite <a href="ueber-uns.html#paedagogik">Pädagogik</a>.</div>
-        </details>
-        <details>
-          <summary>Gibt es einen Zuschuss zu den Gebühren?</summary>
-          <div>Ja. Der St.-Johannes-Verein erhält Zuschüsse vom Freistaat
-            Bayern und von der Gemeinde. Über weitere Ermäßigungen
-            (z.&nbsp;B. für Geschwisterkinder) informieren wir Sie gerne
-            persönlich – Details auch weiter unten im Abschnitt
-            <a href="#kosten">Kosten</a>.</div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ZEITEN ============ -->
-  <section class="section" id="zeiten">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Zeiten</span>
-        <h2>Öffnungszeiten &amp; Bring-/Abholzeiten</h2>
-        <p class="lead">
-          Damit der Tagesablauf für alle Kinder ruhig bleibt, bitten wir Sie,
-          Ihr Kind innerhalb der festen Bring- und Abholzeitfenster zu bringen
-          und abzuholen.
-        </p>
-      </div>
-      <div class="card" style="max-width:640px">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem">
-          <h3 style="margin:0">Kindergarten</h3>
-          <span class="status-pill" data-opening-status></span>
+        <div class="faq">
+          <details>
+            <summary>Ab wann kann ich mein Kind anmelden?</summary>
+            <div>Eine Anmeldung über die zentrale Kitaplatzanmeldung ist ab
+              Geburt des Kindes möglich. Ausschlaggebend für die Aufnahme ist
+              vor allem das Datum der Anmeldung – je früher, desto besser.</div>
+          </details>
+          <details>
+            <summary>Ab welchem Alter wird mein Kind betreut?</summary>
+            <div>In der Kinderkrippe betreuen wir Kinder ab zwölf Monaten,
+              im Kindergarten ab drei Jahren bis zum Schuleintritt.</div>
+          </details>
+          <details>
+            <summary>Können wir mehrere Kindergärten angeben?</summary>
+            <div>Ja. In der zentralen Kitaplatzanmeldung können Sie Ihren
+              Wunschkindergarten priorisieren, falls Sie sich bei mehreren
+              Einrichtungen anmelden möchten.</div>
+          </details>
+          <details>
+            <summary>Müssen wir katholisch sein?</summary>
+            <div>Nein. Wir sind eine katholische Einrichtung, aber alle Familien sind
+              bei uns herzlich willkommen – unabhängig von Konfession und Herkunft.</div>
+          </details>
+          <details>
+            <summary>Wie lange dauert die Eingewöhnung?</summary>
+            <div>Das entscheidet Ihr Kind. Mehr dazu im Abschnitt
+              <a href="#betreuung">Eingewöhnung</a> oben.</div>
+          </details>
+          <details>
+            <summary>Gibt es einen Zuschuss zu den Gebühren?</summary>
+            <div>Ja. Der St.-Johannes-Verein erhält Zuschüsse vom Freistaat
+              Bayern und von der Gemeinde. Über weitere Ermäßigungen
+              (z.&nbsp;B. für Geschwisterkinder) informieren wir Sie gerne
+              persönlich – Details auch im Abschnitt <a href="#betreuung">Kosten</a> oben.</div>
+          </details>
         </div>
-        <h4 class="hours__heading">Öffnungszeiten</h4>
-        <div class="hours">
-          <div class="hours__row"><span class="hours__day">Montag – Donnerstag</span><span class="hours__time">7:30 – 15:45 Uhr</span></div>
-          <div class="hours__row"><span class="hours__day">Freitag</span><span class="hours__time">7:30 – 13:30 Uhr</span></div>
-        </div>
-        <h4 class="hours__heading" style="margin-top:1.4rem">Bring- und Abholzeiten</h4>
-        <div class="hours">
-          <div class="hours__row"><span class="hours__day">Bringzeiten</span><span class="hours__time hours__time--wrap">7:30 – 9:00 Uhr<br>12:15 – 12:30 Uhr<br>13:15 – 13:30 Uhr</span></div>
-          <div class="hours__row"><span class="hours__day">Abholzeiten</span><span class="hours__time hours__time--wrap">12:15 – 12:30 Uhr<br>13:15 – 13:30 Uhr<br>15:30 – 15:45 Uhr</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ GEBÜHREN ============ -->
-  <section class="section section--soft" id="kosten">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Beiträge</span>
-        <h2>Kosten</h2>
-        <p class="lead">
-          Die Höhe des Elternbeitrags richtet sich nach der durchschnittlichen
-          täglichen Buchungszeit.
-        </p>
-      </div>
-
-      <div data-tabs>
-        <div class="tabs__list" role="tablist" aria-label="Kosten">
-          <button class="tabs__btn" type="button" role="tab" id="tab-kosten-regelung" aria-controls="panel-kosten-regelung" aria-selected="true">Unsere Beitragsregelung</button>
-          <button class="tabs__btn" type="button" role="tab" id="tab-kosten-regel" aria-controls="panel-kosten-regel" aria-selected="false">Elternbeiträge Regelkinder</button>
-        </div>
-
-        <div class="tabs__panel" role="tabpanel" id="panel-kosten-regelung" aria-labelledby="tab-kosten-regelung">
-          <div class="card">
-            <p>
-              Eine der Hauptaufgaben des St.-Johannes-Vereins ist es, den
-              Kindergartenbetrieb zu finanzieren. Hierfür erhält der Verein
-              Zuschüsse vom Freistaat Bayern, von der Gemeinde (insgesamt ca.
-              80&nbsp;% der Personalkosten) und im Bedarfsfall vom
-              Caritasverband. Rund 20&nbsp;% der Personalausgaben sowie die
-              gesamten Sachkosten sind durch die Elternbeiträge bzw. durch die
-              Einnahmen aus den Veranstaltungen zu decken.
-            </p>
-            <p>
-              Hinzu kommt eine monatliche Unkostenpauschale in Höhe von 5&nbsp;€.
-              Dieses Geld verwenden wir für das Kochen mit den Kindern am
-              Freitag, Geschenke und Feiern (z.&nbsp;B. Fasching, Oma-Opa-Tag
-              u.&nbsp;a.).
-            </p>
-            <p>
-              Ermäßigung für Geschwisterkinder: 25,00&nbsp;€/Monat. Ermäßigung
-              für Mitglieder: 2,00&nbsp;€/Monat. Das Spielgeld von 1,00&nbsp;€
-              ist im Beitrag enthalten.
-            </p>
-          </div>
-        </div>
-
-        <div class="tabs__panel" role="tabpanel" id="panel-kosten-regel" aria-labelledby="tab-kosten-regel" hidden>
-          <div class="card">
-            <p>Elternbeiträge Regelkinder je nach durchschnittlicher täglicher Buchungszeit:</p>
-            <div style="overflow-x:auto">
-              <table class="table">
-                <thead>
-                  <tr><th>Buchungszeit</th><th>Monatsbeitrag</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>3–4 Stunden</td><td>145,00&nbsp;€</td></tr>
-                  <tr><td>4–5 Stunden</td><td>160,00&nbsp;€</td></tr>
-                  <tr><td>5–6 Stunden</td><td>175,00&nbsp;€</td></tr>
-                  <tr><td>6–7 Stunden</td><td>190,00&nbsp;€</td></tr>
-                  <tr><td>7–8 Stunden</td><td>205,00&nbsp;€</td></tr>
-                  <tr><td>8–9 Stunden</td><td>220,00&nbsp;€</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ESSEN & ALLTAG ============ -->
-  <section class="section" id="essen">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Alltag</span>
-        <h2>Essen &amp; Abläufe</h2>
-      </div>
-
-      <div data-tabs>
-        <div class="tabs__list" role="tablist" aria-label="Essen und Abläufe im Kindergarten">
-          <button class="tabs__btn" type="button" role="tab" id="tab-essen" aria-controls="panel-essen" aria-selected="true">Essen</button>
-          <button class="tabs__btn" type="button" role="tab" id="tab-geburtstage" aria-controls="panel-geburtstage" aria-selected="false">Geburtstage</button>
-          <button class="tabs__btn" type="button" role="tab" id="tab-kleidung" aria-controls="panel-kleidung" aria-selected="false">Kleidung</button>
-          <button class="tabs__btn" type="button" role="tab" id="tab-turnen" aria-controls="panel-turnen" aria-selected="false">Turnen</button>
-        </div>
-
-        <div class="tabs__panel" role="tabpanel" id="panel-essen" aria-labelledby="tab-essen">
-          <div class="card">
-            <h4>Frühstück</h4>
-            <p>Es gibt jeden Morgen einen Obst- und Gemüseteller für alle.
-              Bitte geben Sie Ihrem Kind ein kleines, nahrhaftes Frühstück
-              mit – keine Getränke (wir bieten Milch, Wasser und Tee an) und
-              bitte keine Süßigkeiten.</p>
-            <h4 style="margin-top:1.2rem">Mittagessen</h4>
-            <p>Wir bieten Montag bis Donnerstag ein warmes Mittagessen an.
-              Dies wird vom Haus Miriam in Schöllkrippen geliefert. Die
-              Kosten hierfür belaufen sich auf 3,60&nbsp;€ pro Mittagessen.</p>
-          </div>
-        </div>
-
-        <div class="tabs__panel" role="tabpanel" id="panel-geburtstage" aria-labelledby="tab-geburtstage" hidden>
-          <div class="card">
-            <p>Wir feiern jeden Geburtstag mit einem kleinen Fest. Es wäre
-              günstig, wenn Sie einige Tage vor dem Geburtstag Ihres Kindes
-              mit uns über die Gestaltung sprechen könnten.</p>
-          </div>
-        </div>
-
-        <div class="tabs__panel" role="tabpanel" id="panel-kleidung" aria-labelledby="tab-kleidung" hidden>
-          <div class="card">
-            <p>Bitte denken Sie bei der Auswahl der Kleidung Ihres Kindes
-              daran, dass wir oft mit Farben, Klebstoff, Knete usw. arbeiten
-              und dass die Kinder bei jedem Wetter (außer bei Regen) Bewegung
-              in der frischen Luft brauchen.</p>
-          </div>
-        </div>
-
-        <div class="tabs__panel" role="tabpanel" id="panel-turnen" aria-labelledby="tab-turnen" hidden>
-          <div class="card">
-            <p>Wir gehen jede Woche in altersgerechten Gruppen zum Turnen in
-              die Glasberghalle.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ WOCHENPROGRAMM ============ -->
-  <section class="section section--soft">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Fester Rhythmus</span>
-        <h2>Wochenprogramm</h2>
-        <p class="lead">Jeder Tag hat seinen festen Platz – so wissen die Kinder, was sie erwartet.</p>
-      </div>
-      <div class="card">
-        <div style="overflow-x:auto">
-          <table class="weekplan">
-            <thead>
-              <tr>
-                <th scope="col"><span class="visually-hidden">Tageszeit</span></th>
-                <th scope="col">Montag</th>
-                <th scope="col">Dienstag</th>
-                <th scope="col">Mittwoch</th>
-                <th scope="col">Donnerstag</th>
-                <th scope="col">Freitag</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Vormittag</th>
-                <td class="weekplan__cell weekplan__cell--empty"></td>
-                <td class="weekplan__cell weekplan__cell--bewegung"><span class="weekplan__tag">Bewegung</span>Turnen mit den Großen</td>
-                <td class="weekplan__cell weekplan__cell--bewegung"><span class="weekplan__tag">Bewegung</span>Turnen mit den Kleinen</td>
-                <td class="weekplan__cell weekplan__cell--musik"><span class="weekplan__tag">Musik</span>Sing- &amp; Spielkreis</td>
-                <td class="weekplan__cell weekplan__cell--kueche"><span class="weekplan__tag">Küche</span>Kochtag für alle Farbkleckse</td>
-              </tr>
-              <tr>
-                <th scope="row">Nachmittag</th>
-                <td class="weekplan__cell weekplan__cell--musik"><span class="weekplan__tag">Musik</span>Flöte mit den Pfiffiküssen</td>
-                <td class="weekplan__cell"><span class="weekplan__tag">Vorlesen</span>Märchenstunde</td>
-                <td class="weekplan__cell"><span class="weekplan__tag">Entdecken</span>Pfiffikusaktionen, z.&nbsp;B. Experimentieren</td>
-                <td class="weekplan__cell"><span class="weekplan__tag">Gemeinsam</span>Kaffeeklatsch oder Musikus-Tag</td>
-                <td class="weekplan__cell weekplan__cell--empty"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p style="margin-top:1rem"><em>In den Ferien findet kein Wochenprogramm statt.</em></p>
       </div>
     </div>
   </section>
@@ -536,7 +526,7 @@
         <ul>
           <li>Montag – Donnerstag<br>7:30 – 15:45 Uhr</li>
           <li>Freitag<br>7:30 – 13:30 Uhr</li>
-          <li><a href="kindergarten.html#zeiten">Buchungszeiten ansehen</a></li>
+          <li><a href="kindergarten.html#betreuung">Buchungszeiten ansehen</a></li>
         </ul>
       </div>
     </div>
