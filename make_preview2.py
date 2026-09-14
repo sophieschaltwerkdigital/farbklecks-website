@@ -10,14 +10,12 @@ OUT = _os.path.join(_HERE, "farbklecks-vorschau-v2.html")
 PAGES = [
     ("index",       "index",       "Kindergarten & Krippe Farbklecks Daxberg – Montessori in Mömbris",
      "Katholischer Kindergarten und Kinderkrippe Farbklecks in Mömbris-Daxberg: Betreuung ab 12 Monaten nach Montessori-Pädagogik. Zeiten, Anmeldung und Kontakt.", True),
-    ("unser-haus",   "unser-haus",  "Unser Haus – Kindergarten & Krippe Farbklecks Daxberg",
-     "Lernen Sie unsere Einrichtung kennen: Gruppenräume, Garten, Krippe in Niedersteinbach, unser Team, Träger und Elternbeirat.", False),
-    ("paedagogik",   "paedagogik",  "Pädagogik & Tagesablauf – Farbklecks Daxberg",
-     "Wir arbeiten nach Maria Montessori: vorbereitete Umgebung, Freiarbeit, demokratische Erziehung. Dazu der Tagesablauf in Kindergarten und Krippe.", False),
-    ("betreuung",    "betreuung",   "Betreuung, Zeiten & Gebühren – Farbklecks Daxberg",
-     "Öffnungszeiten, Buchungszeiten, Gebühren, Mittagessen und Ferien im Kindergarten und in der Krippe Farbklecks in Mömbris-Daxberg.", False),
-    ("anmeldung",    "anmeldung",   "Anmeldung – Kindergarten & Krippe Farbklecks Daxberg",
-     "In vier Schritten zum Betreuungsplatz: Ablauf der Anmeldung, Formulare zum Herunterladen und Antworten auf häufige Fragen.", False),
+    ("ueber-uns",    "ueber-uns",   "Über uns – Kindergarten & Krippe Farbklecks Daxberg",
+     "Lernen Sie unsere Einrichtung kennen: Gruppenräume, Garten, unser Team, Träger, Elternbeirat und unsere Montessori-Pädagogik.", False),
+    ("krippe",       "krippe",      "Krippe – Kindergarten & Krippe Farbklecks Daxberg",
+     "Kinderkrippe für Kinder ab 12 Monaten: Öffnungszeiten, Gebühren, Konzept, Anmeldung und Alltag in der Krippe Farbklecks Daxberg.", False),
+    ("kindergarten", "kindergarten","Kindergarten – Kindergarten & Krippe Farbklecks Daxberg",
+     "Kindergarten für Kinder ab 3 Jahren: Öffnungszeiten, Gebühren, Wochenprogramm, Anmeldung und Alltag im Kindergarten Farbklecks Daxberg.", False),
     ("aktuelles",    "aktuelles",   "Aktuelles & Termine – Farbklecks Daxberg",
      "Neuigkeiten, Feste, Ferienzeiten und Schließtage im Kindergarten und in der Krippe Farbklecks Daxberg.", False),
     ("kontakt",      "kontakt",     "Kontakt & Anfahrt – Farbklecks Daxberg",
@@ -75,7 +73,8 @@ footer_html = between(full, '</main>', '<script src="assets/js/main.js" defer></
 
 def fix_links(s):
     s = re.sub(r'href="index\.html"', 'href="#index"', s)
-    s = re.sub(r'href="([a-z0-9\-]+)\.html"', r'href="#\1"', s)
+    s = re.sub(r'href="([a-z0-9\-]+)\.html(#[a-z0-9\-]+)?"',
+                lambda m: 'href="#%s%s"' % (m.group(1), ("~" + m.group(2)[1:]) if m.group(2) else ""), s)
     for rel, uri in img_uris.items():
         s = s.replace('src="%s"' % rel, 'src="%s"' % uri)
     return s
@@ -127,7 +126,7 @@ PREVIEW_JS = """
 
   var pages = Array.prototype.slice.call(document.querySelectorAll('.pv-page'));
 
-  function show(slug, scroll) {
+  function show(slug, anchor, scroll) {
     var found = false;
     pages.forEach(function (p) {
       var match = p.getAttribute('data-page') === slug;
@@ -140,7 +139,7 @@ PREVIEW_JS = """
         });
       }
     });
-    if (!found) { show('404', scroll); return; }
+    if (!found) { show('404', null, scroll); return; }
 
     document.querySelectorAll('[data-nav]').forEach(function (a) {
       if (a.getAttribute('data-nav') === slug) a.setAttribute('aria-current', 'page');
@@ -149,16 +148,23 @@ PREVIEW_JS = """
 
     var titles = %TITLES%;
     document.title = (titles[slug] || 'Vorschau') + ' – Farbklecks Daxberg';
-    if (scroll) window.scrollTo({ top: 0, behavior: 'auto' });
+    if (scroll) {
+      if (anchor) {
+        var target = document.getElementById(anchor);
+        if (target) { requestAnimationFrame(function () { target.scrollIntoView({ behavior: 'auto', block: 'start' }); }); return; }
+      }
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
   }
 
   function current() {
     var h = (location.hash || '#index').replace('#', '');
-    return h || 'index';
+    var parts = (h || 'index').split('~');
+    return { slug: parts[0] || 'index', anchor: parts[1] || null };
   }
 
-  window.addEventListener('hashchange', function () { show(current(), true); });
-  show(current(), false);
+  window.addEventListener('hashchange', function () { var c = current(); show(c.slug, c.anchor, true); });
+  (function () { var c = current(); show(c.slug, c.anchor, false); })();
 })();
 """
 

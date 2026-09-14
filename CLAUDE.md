@@ -58,10 +58,17 @@ farbklecks-website/
 ├── source-fotos/          Original-Fotos/Logo/Blobs vor der Optimierung
 └── website/               Fertiges, deploybares Ergebnis (das, was live geht)
     ├── index.html
-    ├── unser-haus.html       Einrichtung, Räume, Team, Träger, Elternbeirat
-    ├── paedagogik.html       Montessori-Konzept, Tagesablauf, Eingewöhnung
-    ├── betreuung.html        Gruppen, Öffnungs-/Buchungszeiten, Gebühren, Ferien
-    ├── anmeldung.html        Ablauf (zentrale Kitaplatzanmeldung), Downloads, FAQ
+    ├── ueber-uns.html        Einrichtung, Räume, Team, Träger & Elternbeirat, Pädagogik
+    │                         (Montessori-Konzept, Tagesablauf, Eingewöhnung) – im Menü
+    │                         "Über uns" mit Dropdown, Unterpunkte sind Anchor-Links auf
+    │                         Sektionen dieser einen Seite (#einrichtung, #raeume, #team,
+    │                         #traeger, #paedagogik), keine eigenen Unterseiten
+    ├── krippe.html           Krippengruppe, Anmeldung (2. Sektion), Öffnungs-/
+    │                         Buchungszeiten, Gebühren (U3), Essen & Alltag,
+    │                         Konzept der Kinderkrippe, Wochenprogramm, Elternarbeit
+    ├── kindergarten.html     Kindergartengruppe, Anmeldung (2. Sektion), Öffnungs-/
+    │                         Buchungszeiten, Gebühren (Regelkinder), Essen & Alltag,
+    │                         Wochenprogramm, Elternarbeit
     ├── aktuelles.html        Termine und Berichte
     ├── kontakt.html          Kontaktdaten, Formular, Anfahrt
     ├── impressum.html        Vorlage – teils noch zu vervollständigen
@@ -114,7 +121,7 @@ Die Seite kommt bewusst ohne Dritt-Dienste aus. Das darf nicht aufgeweicht werde
 | | |
 |---|---|
 | Öffnungszeiten Kindergarten | Mo–Do 7:30–15:45 Uhr, Fr 7:30–13:30 Uhr |
-| Öffnungszeiten Krippe | weicht ab – siehe `betreuung.html`, Abschnitt „Öffnungszeiten" |
+| Öffnungszeiten Krippe | weicht ab – siehe `krippe.html`, Abschnitt „Öffnungszeiten" |
 | Kindergarten | eine Gruppe, 25 Plätze, ab 3 Jahren |
 | Krippe | ab 12 Monaten, seit September 2022, **mittlerweile im neuen Anbau
   direkt am Standort Daxberg** (nicht mehr Niedersteinbach – dort war die
@@ -125,9 +132,9 @@ Die Seite kommt bewusst ohne Dritt-Dienste aus. Das darf nicht aufgeweicht werde
 | E-Mail | info@kindergarten-farbklecks.de |
 
 Bei Änderungen an Öffnungszeiten/Kontaktdaten: Topbar (`parts/header.tpl`),
-Footer (`parts/footer.tpl`), `index.html`- und `betreuung.html`-Inhalt sowie
-`assets/js/main.js` (`OPENING_HOURS`) und das JSON-LD in `build.py`
-konsistent halten.
+Footer (`parts/footer.tpl`), `index.html`-, `krippe.html`- und
+`kindergarten.html`-Inhalt sowie `assets/js/main.js` (`OPENING_HOURS`) und
+das JSON-LD in `build.py` konsistent halten.
 
 ## Offene Punkte
 
@@ -142,7 +149,7 @@ konsistent halten.
 3. **Kontaktformular** an ein Versandskript anbinden (`action`-Attribut in
    `kontakt.html` bzw. `pages/kontakt.body.html`).
 4. **Alte URLs** erfassen und ggf. 301-Weiterleitungen in `.htaccess` ergänzen.
-5. `paedagogik.html`, Abschnitt „Konzept der Krippe" → Räumlichkeiten:
+5. `krippe.html`, Abschnitt „Konzept der Kinderkrippe" → Räumlichkeiten:
    Beschreibung ist noch die alte (Niedersteinbach), muss an den neuen
    Anbau angepasst werden (im Code mit `todo-note` markiert).
 

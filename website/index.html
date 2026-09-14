@@ -86,11 +86,22 @@
 
     <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
       <ul class="nav__list">
-        <li><a class="nav__link" data-nav="unser-haus" href="unser-haus.html">Unser Kindergarten</a></li>
-        <li><a class="nav__link" data-nav="paedagogik" href="paedagogik.html">Pädagogik</a></li>
-        <li><a class="nav__link" data-nav="betreuung" href="betreuung.html">Betreuung &amp; Zeiten</a></li>
+        <li class="nav__item nav__item--dropdown">
+          <a class="nav__link" data-nav="ueber-uns" href="ueber-uns.html">Über uns</a>
+          <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="dropdown-ueber-uns" aria-label="Untermenü Über uns öffnen">
+            <span class="nav__caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav__dropdown" id="dropdown-ueber-uns">
+            <li><a href="ueber-uns.html#einrichtung">Die Einrichtung</a></li>
+            <li><a href="ueber-uns.html#raeume">Unsere Räume</a></li>
+            <li><a href="ueber-uns.html#team">Unser Team</a></li>
+            <li><a href="ueber-uns.html#traeger">Träger &amp; Elternbeirat</a></li>
+            <li><a href="ueber-uns.html#paedagogik">Pädagogik</a></li>
+          </ul>
+        </li>
+        <li><a class="nav__link" data-nav="krippe" href="krippe.html">Krippe</a></li>
+        <li><a class="nav__link" data-nav="kindergarten" href="kindergarten.html">Kindergarten</a></li>
         <li><a class="nav__link" data-nav="aktuelles" href="aktuelles.html">Aktuelles</a></li>
-        <li><a class="nav__link" data-nav="anmeldung" href="anmeldung.html">Anmeldung</a></li>
         <li class="nav__cta"><a class="btn btn--primary" data-nav="kontakt" href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
@@ -113,7 +124,7 @@
         </p>
         <div class="btn-row" style="margin-top:1.8rem">
           <a class="btn btn--primary" href="https://moembris.zentrale-kitaplatzanmeldung.de/welcome" target="_blank" rel="noopener noreferrer">Zur Kitaplatzanmeldung</a>
-          <a class="btn btn--ghost" href="unser-haus.html">Kindergarten ansehen</a>
+          <a class="btn btn--ghost" href="ueber-uns.html">Kindergarten ansehen</a>
         </div>
       </div>
       <div class="hero__media">
@@ -136,17 +147,17 @@
   <section class="section section--tight">
     <div class="wrap">
       <div class="grid grid-3">
-        <a class="card card--link card--teal reveal" href="betreuung.html">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="21" r="13" fill="var(--accent-tint)"/><path d="M20 14v7l5 3"/></svg></div>
-          <h3>Betreuung &amp; Zeiten</h3>
-          <p>Öffnungszeiten, Buchungszeiten, Gebühren und Verpflegung auf einen Blick.</p>
-          <span class="card__more">Zeiten ansehen <span aria-hidden="true">→</span></span>
+        <a class="card card--link card--coral reveal" href="krippe.html">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="11" r="4" fill="var(--accent-tint)"/><circle cx="28" cy="11" r="4" fill="var(--accent-tint)"/><circle cx="20" cy="22" r="12" fill="var(--accent-tint)"/><ellipse cx="20" cy="24" rx="3" ry="2.2" fill="#fff"/><circle cx="15" cy="20" r="1.3" fill="currentColor" stroke="none"/><circle cx="25" cy="20" r="1.3" fill="currentColor" stroke="none"/><path d="M17 27c1 1.2 5 1.2 6 0"/></svg></div>
+          <h3>Krippe</h3>
+          <p>Für Kinder ab 12 Monaten: Öffnungszeiten, Gebühren, Konzept und Anmeldung.</p>
+          <span class="card__more">Zur Krippe <span aria-hidden="true">→</span></span>
         </a>
-        <a class="card card--link card--coral reveal d1" href="anmeldung.html">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="7" width="18" height="26" rx="3" fill="#fff"/><path d="M12.5 14.5h9M12.5 19.5h9M12.5 24.5h5"/><path d="M23 25l8.4-8.4 3 3L26 28l-3.6.8z" fill="var(--cta)"/></svg></div>
-          <h3>Anmeldung</h3>
-          <p>So läuft die Anmeldung ab – inklusive Anmeldeformular zum Herunterladen.</p>
-          <span class="card__more">Zur Anmeldung <span aria-hidden="true">→</span></span>
+        <a class="card card--link card--teal reveal d1" href="kindergarten.html">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 15c0-4.4 2.7-8 6-8s6 3.6 6 8"/><rect x="9" y="15" width="22" height="17" rx="5" fill="var(--accent-tint)"/><path d="M15 15v-2.4a1.6 1.6 0 0 1 1.6-1.6h6.8a1.6 1.6 0 0 1 1.6 1.6V15"/><rect x="16" y="20" width="8" height="6.5" rx="2" fill="#fff"/><path d="M15.5 32v3M24.5 32v3"/></svg></div>
+          <h3>Kindergarten</h3>
+          <p>Für Kinder ab 3 Jahren: Öffnungszeiten, Gebühren, Wochenprogramm und Anmeldung.</p>
+          <span class="card__more">Zum Kindergarten <span aria-hidden="true">→</span></span>
         </a>
         <a class="card card--link card--yellow reveal d2" href="aktuelles.html">
           <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="26" height="22" rx="3" fill="var(--yellow-tint)"/><path d="M7 17h26"/><path d="M13 6.5v7M27 6.5v7"/><circle cx="14" cy="23" r="1.2" fill="currentColor" stroke="none"/><circle cx="20" cy="23" r="1.2" fill="currentColor" stroke="none"/><circle cx="26" cy="23" r="1.2" fill="currentColor" stroke="none"/><circle cx="14" cy="27.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="20" cy="27.5" r="1.2" fill="currentColor" stroke="none"/></svg></div>
@@ -205,7 +216,7 @@
           <li>Enge, vertrauensvolle Zusammenarbeit mit den Eltern</li>
         </ul>
         <div class="btn-row" style="margin-top:1.8rem">
-          <a class="btn btn--primary" href="unser-haus.html">Unser Kindergarten kennenlernen</a>
+          <a class="btn btn--primary" href="ueber-uns.html">Unser Kindergarten kennenlernen</a>
         </div>
       </div>
       <div class="split__media reveal">
@@ -278,7 +289,7 @@
         </div>
       </div>
       <div class="text-center" style="margin-top:2.2rem">
-        <a class="btn btn--ghost" href="paedagogik.html">Mehr über unser Konzept</a>
+        <a class="btn btn--ghost" href="ueber-uns.html#paedagogik">Mehr über unser Konzept</a>
       </div>
     </div>
   </section>
@@ -316,7 +327,7 @@
           haben wir auf einer eigenen Seite übersichtlich zusammengestellt.
         </p>
         <div class="btn-row" style="margin-top:1.6rem">
-          <a class="btn btn--primary" href="betreuung.html">Zu Zeiten &amp; Gebühren</a>
+          <a class="btn btn--primary" href="kindergarten.html#zeiten">Zu Zeiten &amp; Gebühren</a>
           <a class="btn btn--ghost" href="kontakt.html">Frage stellen</a>
         </div>
       </div>
@@ -336,7 +347,7 @@
           <h3>Anmeldung für das neue Kindergartenjahr</h3>
           <p>Ab sofort nehmen wir Anmeldungen für das kommende Kindergartenjahr entgegen.
             Das Formular finden Sie auf der Seite „Anmeldung“.</p>
-          <a class="card__more" href="anmeldung.html">Weiterlesen <span aria-hidden="true">→</span></a>
+          <a class="card__more" href="kindergarten.html#anmeldung">Weiterlesen <span aria-hidden="true">→</span></a>
         </article>
         <article class="card reveal d1">
           <span class="news__date">Beispielmeldung</span>
@@ -392,10 +403,9 @@
         <h3>Seiten</h3>
         <ul>
           <li><a href="index.html">Start</a></li>
-          <li><a href="unser-haus.html">Unser Kindergarten</a></li>
-          <li><a href="paedagogik.html">Pädagogik</a></li>
-          <li><a href="betreuung.html">Betreuung &amp; Zeiten</a></li>
-          <li><a href="anmeldung.html">Anmeldung</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="krippe.html">Krippe</a></li>
+          <li><a href="kindergarten.html">Kindergarten</a></li>
           <li><a href="aktuelles.html">Aktuelles</a></li>
         </ul>
       </div>
@@ -415,7 +425,7 @@
         <ul>
           <li>Montag – Donnerstag<br>7:30 – 15:45 Uhr</li>
           <li>Freitag<br>7:30 – 13:30 Uhr</li>
-          <li><a href="betreuung.html">Buchungszeiten ansehen</a></li>
+          <li><a href="kindergarten.html#zeiten">Buchungszeiten ansehen</a></li>
         </ul>
       </div>
     </div>

@@ -4,6 +4,7 @@
 
    Enthält:
    01 Mobile-Navigation
+   01b Dropdown-Menü
    02 Sticky-Header
    03 Scroll-Animationen (Reveal)
    04 "Nach oben"-Button
@@ -67,6 +68,43 @@
     // Beim Wechsel auf Desktop-Breite zurücksetzen
     window.addEventListener("resize", function () {
       if (window.innerWidth > 860 && nav.classList.contains("is-open")) close(false);
+    });
+  }
+
+  /* ---------- 01b Dropdown-Menü ------------------------- */
+  function initDropdown() {
+    document.querySelectorAll(".nav__item--dropdown").forEach(function (item) {
+      var toggle = item.querySelector(".nav__dropdown-toggle");
+      if (!toggle) return;
+
+      function close() {
+        item.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+      function open() {
+        document.querySelectorAll(".nav__item--dropdown.is-open").forEach(function (other) {
+          if (other !== item) {
+            other.classList.remove("is-open");
+            var t = other.querySelector(".nav__dropdown-toggle");
+            if (t) t.setAttribute("aria-expanded", "false");
+          }
+        });
+        item.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (item.classList.contains("is-open")) close(); else open();
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!item.contains(e.target)) close();
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") close();
+      });
     });
   }
 
@@ -315,6 +353,7 @@
   /* ---------- Start ------------------------------------- */
   function init() {
     initNav();
+    initDropdown();
     initStickyHeader();
     initReveal();
     initToTop();

@@ -59,11 +59,22 @@
 
     <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
       <ul class="nav__list">
-        <li><a class="nav__link" data-nav="unser-haus" href="unser-haus.html">Unser Kindergarten</a></li>
-        <li><a class="nav__link" data-nav="paedagogik" href="paedagogik.html">Pädagogik</a></li>
-        <li><a class="nav__link" data-nav="betreuung" href="betreuung.html">Betreuung &amp; Zeiten</a></li>
+        <li class="nav__item nav__item--dropdown">
+          <a class="nav__link" data-nav="ueber-uns" href="ueber-uns.html">Über uns</a>
+          <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="dropdown-ueber-uns" aria-label="Untermenü Über uns öffnen">
+            <span class="nav__caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav__dropdown" id="dropdown-ueber-uns">
+            <li><a href="ueber-uns.html#einrichtung">Die Einrichtung</a></li>
+            <li><a href="ueber-uns.html#raeume">Unsere Räume</a></li>
+            <li><a href="ueber-uns.html#team">Unser Team</a></li>
+            <li><a href="ueber-uns.html#traeger">Träger &amp; Elternbeirat</a></li>
+            <li><a href="ueber-uns.html#paedagogik">Pädagogik</a></li>
+          </ul>
+        </li>
+        <li><a class="nav__link" data-nav="krippe" href="krippe.html">Krippe</a></li>
+        <li><a class="nav__link" data-nav="kindergarten" href="kindergarten.html">Kindergarten</a></li>
         <li><a class="nav__link" data-nav="aktuelles" href="aktuelles.html">Aktuelles</a></li>
-        <li><a class="nav__link" data-nav="anmeldung" href="anmeldung.html">Anmeldung</a></li>
         <li class="nav__cta"><a class="btn btn--primary" data-nav="kontakt" href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
@@ -179,10 +190,9 @@
         <h3>Seiten</h3>
         <ul>
           <li><a href="index.html">Start</a></li>
-          <li><a href="unser-haus.html">Unser Kindergarten</a></li>
-          <li><a href="paedagogik.html">Pädagogik</a></li>
-          <li><a href="betreuung.html">Betreuung &amp; Zeiten</a></li>
-          <li><a href="anmeldung.html">Anmeldung</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="krippe.html">Krippe</a></li>
+          <li><a href="kindergarten.html">Kindergarten</a></li>
           <li><a href="aktuelles.html">Aktuelles</a></li>
         </ul>
       </div>
@@ -202,7 +212,7 @@
         <ul>
           <li>Montag – Donnerstag<br>7:30 – 15:45 Uhr</li>
           <li>Freitag<br>7:30 – 13:30 Uhr</li>
-          <li><a href="betreuung.html">Buchungszeiten ansehen</a></li>
+          <li><a href="kindergarten.html#zeiten">Buchungszeiten ansehen</a></li>
         </ul>
       </div>
     </div>

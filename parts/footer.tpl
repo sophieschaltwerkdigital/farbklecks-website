@@ -15,10 +15,9 @@
         <h3>Seiten</h3>
         <ul>
           <li><a href="index.html">Start</a></li>
-          <li><a href="unser-haus.html">Unser Kindergarten</a></li>
-          <li><a href="paedagogik.html">Pädagogik</a></li>
-          <li><a href="betreuung.html">Betreuung &amp; Zeiten</a></li>
-          <li><a href="anmeldung.html">Anmeldung</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="krippe.html">Krippe</a></li>
+          <li><a href="kindergarten.html">Kindergarten</a></li>
           <li><a href="aktuelles.html">Aktuelles</a></li>
         </ul>
       </div>
@@ -38,7 +37,7 @@
         <ul>
           <li>Montag – Donnerstag<br>7:30 – 15:45 Uhr</li>
           <li>Freitag<br>7:30 – 13:30 Uhr</li>
-          <li><a href="betreuung.html">Buchungszeiten ansehen</a></li>
+          <li><a href="kindergarten.html#zeiten">Buchungszeiten ansehen</a></li>
         </ul>
       </div>
     </div>
