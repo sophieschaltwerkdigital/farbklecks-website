@@ -202,9 +202,12 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700; font-size: .82rem;
   padding: .4rem .95rem; border-radius: var(--r-pill);
   margin-bottom: .9rem;
-  background: linear-gradient(135deg, var(--bg-alt), var(--surface-2));
-  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+  background: radial-gradient(circle at 25% 30%, var(--accent-2-tint), transparent 65%), var(--surface);
 }
+/* Farbige Verlaufsvarianten im Stil der Bild-Platzhalter – rotieren pro Badge. */
+.eyebrow--2 { background: radial-gradient(circle at 25% 30%, rgba(242, 124, 126, .4), transparent 65%), var(--surface); }
+.eyebrow--3 { background: radial-gradient(circle at 25% 30%, var(--yellow-tint), transparent 65%), var(--surface); }
 
 .text-center { text-align: center; }
 .text-center .lead { margin-inline: auto; }
