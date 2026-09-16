@@ -198,19 +198,13 @@ p:last-child { margin-bottom: 0; }
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: .55rem;
-  color: #fff9f0;
+  color: var(--ink);
   font-weight: 700; font-size: .82rem;
   padding: .4rem .95rem; border-radius: var(--r-pill);
   margin-bottom: .9rem;
-  background: linear-gradient(135deg, var(--cta), var(--accent));
+  background: linear-gradient(135deg, var(--bg-alt), var(--surface-2));
+  border: 1px solid var(--line);
 }
-/* Verlaufsvarianten aus der Logo-/Markenpalette – rotieren pro Badge,
-   damit nicht jede Sektion denselben Verlauf zeigt. */
-.eyebrow--2 { background: linear-gradient(135deg, var(--accent-2-dark), var(--accent-2)); }
-.eyebrow--3 { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); }
-.eyebrow--4 { background: linear-gradient(135deg, var(--cta-dark), var(--accent-dark)); }
-.eyebrow--5 { background: linear-gradient(135deg, var(--cta-dark), var(--accent-2)); }
-.eyebrow--6 { background: linear-gradient(135deg, var(--accent-2), var(--accent)); }
 
 .text-center { text-align: center; }
 .text-center .lead { margin-inline: auto; }
