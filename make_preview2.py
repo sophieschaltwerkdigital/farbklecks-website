@@ -48,9 +48,12 @@ IMG_MIMES = {
     "assets/img/logo.png": "image/png",
     "assets/img/blob-1.png": "image/png",
     "assets/img/blob-2.png": "image/png",
-    "assets/img/hero-1.webp": "image/webp",
-    "assets/img/hero-2.webp": "image/webp",
-    "assets/img/hero-3.webp": "image/webp",
+    "assets/img/kindergarten-farbklecks-daxberg-gruppenraum.webp": "image/webp",
+    "assets/img/kindergarten-farbklecks-daxberg-spielhaus.webp": "image/webp",
+    "assets/img/kindergarten-farbklecks-daxberg-montessori-material.webp": "image/webp",
+    "assets/img/farbklecks-orange.png": "image/png",
+    "assets/img/farbklecks-gruen.png": "image/png",
+    "assets/img/farbklecks-rot.png": "image/png",
 }
 
 # Fonts + Bilder als Data-URI einbetten (externe Dateien gibt es im Artifact nicht)

@@ -4,8 +4,9 @@
 |---|---|---|
 | `logo.png` | Logo in Header und Footer | Aus dem Claude-Design-Entwurf übernommen – **bitte bestätigen, dass dies die richtige/aktuellste Version ist**, idealerweise als Vektordatei (SVG) nachreichen |
 | `favicon.svg` | Symbol im Browser-Tab | fertig (generiert, passend zur neuen Farbwelt) |
-| `blob-1.png`, `blob-2.png` | Dekorative Farbkleckse im Hero und in den Seiten-Headern | fertig, aus dem Design-Entwurf |
-| `hero-1.webp`, `hero-2.webp`, `hero-3.webp` | Die drei Fotos im Hero-Bereich der Startseite | echte Fotos aus dem Design-Entwurf – bitte prüfen, ob es aktuellere/bessere Aufnahmen gibt |
+| `blob-1.png`, `blob-2.png` | Dekorative Farbkleckse in den Seiten-Headern (Pageheroes) | fertig, aus dem Design-Entwurf |
+| `farbklecks-orange.png`, `farbklecks-gruen.png`, `farbklecks-rot.png` | Dekorative Farbkleckse im Hero der Startseite | fertig, vom Kunden geliefert |
+| `kindergarten-farbklecks-daxberg-gruppenraum.webp`, `kindergarten-farbklecks-daxberg-spielhaus.webp`, `kindergarten-farbklecks-daxberg-montessori-material.webp` | Die drei bereits als Blob freigestellten Fotos im Hero-Bereich der Startseite | fertig, vom Kunden geliefert |
 | `og-bild.jpg` | Vorschaubild beim Teilen (WhatsApp, Facebook) | **fehlt noch**, 1200 × 630 px |
 
 ## Noch offen
