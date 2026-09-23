@@ -175,6 +175,9 @@ titles = "{" + ", ".join('"%s": "%s"' % (s, l) for s, l, *_ in PAGES) + "}"
 PREVIEW_JS = PREVIEW_JS.replace("%TITLES%", titles)
 
 html = []
+html.append('<!DOCTYPE html>')
+html.append('<meta charset="utf-8">')
+html.append('<meta name="viewport" content="width=device-width, initial-scale=1">')
 html.append('<title>Farbklecks Daxberg – Redesign v2</title>')
 html.append('<style>\n' + css + PREVIEW_CSS + '\n</style>')
 html.append('<div class="pv-bar">')
